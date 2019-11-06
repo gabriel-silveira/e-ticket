@@ -5,26 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>E-ticket</title>
-</head>
-<style>
-  #e-ticket {
-    position: relative;
-    width: 210mm;
-    height: 297mm;
-    left: 50%;
-    margin-left: -105mm;
-    border: 1px solid #000;
-  }
 
-  #header {
-    width: 100%;
-    height: 100px;
-    background-color: #000;
-  }
-</style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/general.css">
 <body>
-  <div id="e-ticket">
-    <div id="header"></div>
+  <div id="wrapper">
+    <div id="e-ticket">
+      <div id="header">
+        <p class="eco-message">Mensagem sobre consciência ecológica</p>
+        <p class="printed-version">Versão para impressão</p>
+        <img src="imgs/logo_entidade.png" />
+      </div>
+
+      <div class="table">
+        <div class="row">
+          <div class="column qr-code">
+            <img class="event-image" src="imgs/imagem_evento.png" alt="Imagem do evento">
+            <figure class="qr-code"><img src="imgs/qr-code.png" alt="QR Code" /></figure>
+            <div class="locator">GRXMW9D | 000001</div>
+          </div>
+          <div class="column content">
+            <p class="event-name">Temporada OSESP - Heinz Holliger – Ueli Wiget – Luiz Garcia</p>
+            <p>7 de Novembro a 9 de Novembro</p>
+            <p><b>Sala São Paulo</b> - Praça Júlio Prestes, 16 - Campos Elíseos, São Paulo - SP, 01218-020, Brasil</p>
+            <p class="left-floated"><b>Tipo de ingresso:</b><br/>Meia estudante</p>
+            <p><b>Valor:</b><br/>R$ 7,50</p>
+            <p class="left-floated"><b>Setor:</b><br/>Piso Térreo Plateia Central</p>
+            <p><b>Assento:</b><br/>K 1</p>
+            <p><b>Comprador:</b><br/><b>Nome:</b> Gabriel Silveira - <b>CPF:</b> 334.263.748-03</p>
+
+            <img class="powered" src="imgs/powered.png" alt="Powered by INTI" />
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <p class="important-info"><b>Informações importantes</b></p>
+        <p>Ingresso pessoal e intransferível.</p>
+        <p>Não nos responsabilizamos por ingressos adquiridos fora dos canais oficiais de venda.</p>
+        <p>É obrigatória a apresentação de um documento de identificação original com foto em nome do comprador.</p>
+        <p>O cartão utilizado no ato da compra pode ser solicitado no acesso ao evento.</p>
+        <p>A produção e execução do evento é de inteira responsabilidade do promotor.</p>
+        <p>A não utilização do bilhete não dá direto à troca ou devolução de qualquer quantia paga pela aquisição do mesmo.</p>
+        <p>Ao adquirir esse ingresso, você está concordando com os Termos de Uso e Política de Privacidade, dispostos no ato da compra.</p>
+        <p>Ao entrar no evento, o visitante autoriza o uso de sua imagem pessoal por parte dos organizadores. As imagens captadas no
+        espaço poderão ser utilizadas em materiais de foto, vídeo, documentos, meios de comunicação, campanhas promocionais e
+        institucionais destinadas à divulgação ao público.</p>
+        <img src="imgs/scissor.png" alt="Corte aqui" class="scissor" />
+      </div>
+
+      <div class="table">
+        <div class="row">
+          <div class="column qr-code">
+            <div class="locator">GRXMW9D | 000001</div>
+            <figure class="qr-code"><img src="imgs/qr-code.png" alt="QR Code" /></figure>
+          </div>
+          <div class="column content">
+            <p class="event-name">Temporada OSESP - Heinz Holliger – Ueli Wiget – Luiz Garcia</p>
+            <p>7 de Novembro a 9 de Novembro</p>
+            <p><b>Sala São Paulo</b> - Praça Júlio Prestes, 16 - Campos Elíseos, São Paulo - SP, 01218-020, Brasil</p>
+            <p class="left-floated"><b>Tipo de ingresso:</b><br/>Meia estudante</p>
+            <p><b>Valor:</b><br/>R$ 7,50</p>
+            <p class="left-floated"><b>Setor:</b><br/>Piso Térreo Plateia Central</p>
+            <p><b>Assento:</b><br/>K 1</p>
+            <p><b>Comprador:</b><br/><b>Nome:</b> Gabriel Silveira - <b>CPF:</b> 334.263.748-03</p>
+
+            <img class="powered" src="imgs/powered.png" alt="Powered by INTI" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

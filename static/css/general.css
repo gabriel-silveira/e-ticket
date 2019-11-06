@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.96em;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0px;
+  margin: 0px 0px 2mm 0px;
+  line-height: 5mm;
+}
+p.left-floated {
+  float: left;
+  width: 50%;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+#wrapper {
+  position: relative;
+  padding: 10mm 0;
+  width: 200mm;
+  left: 50%;
+  margin-left: -100mm;
+}
+#e-ticket {
+  width: 100%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+#header {
+  padding: 0 10px;
+  width: 100%;
+  color: #FFF;
+  background-color: #000;
+  -webkit-print-color-adjust: exact;
+}
+#header > img {
+  height: 18mm;
+}
+#header p {
+  padding: 0;
+  margin: 0;
+}
+.printed-version {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  padding: 2mm;
+}
+.eco-message {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  font-size: 0.8em;
+}
+
+.table {
+  display: table;
+}
+.row {
+  display: table-row;
+}
+.column {
+  display: table-cell;
+  padding-bottom: 10mm;
+}
+.column.content {
+  width: 67%;
+  padding: 20px;
+}
+.column.qr-code {
+  width: 33%;
+  padding-top: 2mm;
+}
+
+p.event-name {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+img.event-image {
+  width: 100%;
+}
+
+figure.qr-code {
+  width: 100%;
+  text-align: center;
+}
+
+.locator {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.disclaimer {
+  width: 100%;
+  position: relative;
+  padding: 2mm 0;
+  border-top: 0.5mm solid rgba(0,0,0,0.2);
+  border-bottom: 0.5mm dashed #000;
+}
+.disclaimer p {
+  margin: 3mm 8mm 3mm 8mm;
+}
+
+.important-info {
+  font-size: 1.4em;
+}
+
+.scissor {
+  position: absolute;
+  bottom: 0.5mm;
+  right: 5mm;
+  height: 3mm;
+}
+
+.powered {
+  position: absolute;
+  bottom: 5mm;
+  right: 5mm;
+  height: 6mm;
+}
