@@ -10,18 +10,32 @@
   padding: 0;
 }
 
+body {
+  background-color: rgba(0,0,0,0.15);
+}
+
 p {
   padding: 0px;
   margin: 0px 0px 2mm 0px;
-  line-height: 5mm;
-}
-p.left-floated {
-  float: left;
-  width: 50%;
+  line-height: 4.2mm;
 }
 
 b, strong {
   font-weight: 700;
+}
+
+.left-floated {
+  float: left;
+  width: auto;
+  margin-right: 7mm;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-40 {
+  width: 40mm;
 }
 
 #wrapper {
@@ -33,8 +47,11 @@ b, strong {
 }
 #e-ticket {
   width: 100%;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0.1);
+  background-color: #FFF;
+
+  border-radius: 10px;
 }
 #header {
   padding: 0 10px;
@@ -42,6 +59,13 @@ b, strong {
   color: #FFF;
   background-color: #000;
   -webkit-print-color-adjust: exact;
+
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 #header > img {
   height: 18mm;
@@ -52,15 +76,15 @@ b, strong {
 }
 .printed-version {
   position: absolute;
-  top: 16px;
-  right: 15px;
+  top: 3.5mm;
+  right: 4mm;
   padding: 2mm;
 }
 .eco-message {
   position: absolute;
-  top: 35px;
-  right: 15px;
-  font-size: 0.8em;
+  top: 8mm;
+  right: 4mm;
+  font-size: 0.7em;
 }
 
 .table {
@@ -80,7 +104,12 @@ b, strong {
 }
 .column.qr-code {
   width: 33%;
-  padding-top: 2mm;
+}
+.column.qr-code p.tax-cupom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8em;
 }
 
 p.event-name {
@@ -93,22 +122,29 @@ img.event-image {
 }
 
 figure.qr-code {
+  padding-top: 3mm;
   width: 100%;
-  text-align: center;
+}
+figure.qr-code > img {
+  width: 32mm;
 }
 
 .locator {
   width: 100%;
-  text-align: center;
   font-weight: 700;
+}
+.locator-label {
+  width: 100%;
+  font-size: 0.9em;
+  padding-bottom: 1mm;
 }
 
 .disclaimer {
   width: 100%;
   position: relative;
   padding: 2mm 0;
-  border-top: 0.5mm solid rgba(0,0,0,0.2);
-  border-bottom: 0.5mm dashed #000;
+  border-top: 0.4mm solid rgba(0,0,0,0.1);
+  border-bottom: 0.4mm dashed #000;
 }
 .disclaimer p {
   margin: 3mm 8mm 3mm 8mm;
@@ -130,4 +166,19 @@ figure.qr-code {
   bottom: 5mm;
   right: 5mm;
   height: 6mm;
+}
+
+.extra-infos {
+  margin-bottom: 4mm;
+  padding: 1mm 0mm;
+  font-size: 0.6em;
+}
+.extra-infos > p {
+  padding: 0;
+  margin: 0;
+  line-height: 3mm;
+}
+
+p.clear {
+  clear: both;
 }
