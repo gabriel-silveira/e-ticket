@@ -76,6 +76,7 @@ b, strong {
 .column.content {
   width: 67%;
   padding: 20px;
+  vertical-align: top;
 }
 .column.qr-code {
   width: 33%;
