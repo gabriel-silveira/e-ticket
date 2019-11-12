@@ -27,7 +27,9 @@ b, strong {
 .left-floated {
   float: left;
   width: auto;
-  margin-right: 7mm;
+}
+.right-floated {
+  float: right;
 }
 
 .text-center {
@@ -86,12 +88,6 @@ b, strong {
   right: 4mm;
   padding: 2mm;
 }
-.eco-message {
-  position: absolute;
-  top: 8mm;
-  right: 4mm;
-  font-size: 0.7em;
-}
 
 .watermark {
   background-image: url('../imgs/watermark.png');
@@ -116,8 +112,8 @@ b, strong {
 .column.pb-3 {
   padding-bottom: 3mm;
 }
-.column.pb-10 {
-  padding-bottom: 10mm;
+.column.pb-5 {
+  padding-bottom: 5mm;
 }
 .column.content {
   width: 67%;
@@ -166,24 +162,25 @@ figure.qr-code > img {
 }
 
 .disclaimer {
-  width: 100%;
   position: relative;
+  width: 100%;
   padding: 2mm 0;
   border-top: 0.4mm solid rgba(0,0,0,0.1);
   border-bottom: 0.4mm dashed #000;
 }
 .disclaimer p {
+  font-size: 0.8em;
   margin: 3mm 8mm 3mm 8mm;
 }
 
-.important-info {
-  font-size: 1.4em;
+.disclaimer .important-info {
+  font-size: 1.2em;
 }
 
 .scissor {
   position: absolute;
   bottom: 0.5mm;
-  right: 5mm;
+  right: 8mm;
   height: 3mm;
 }
 
@@ -194,21 +191,36 @@ figure.qr-code > img {
   height: 6mm;
 }
 
-.extra-infos {
-  margin-bottom: 4mm;
-  padding: 1mm 0mm;
-  font-size: 0.6em;
-}
 .extra-infos > p {
-  padding: 0;
-  margin: 0;
+  padding: 1mm 0mm;
+  margin-bottom: 4mm;
+  margin-right: 3mm;
+  font-size: 0.7em;
   line-height: 3mm;
 }
-
-p.age-rating {
-  float: right;
+.extra-infos > p:last-child {
+  margin-right: 0;
 }
 
-.clear {
+
+.eco-message-panel {
   clear: both;
+  display: inline-block;
+  width: 74mm;
+  padding: 1mm;
+  color: #73b52e;
+  background-color: #FFF;
+  border: 0.3mm solid #73b52e;
+  border-radius: 1mm;
 }
+.eco-logo {
+  height: 9mm;
+  margin-right: 1mm;
+}
+.eco-message {
+  padding-top: 0.3mm;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
