@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Temporada OSESP - Heinz Holliger – Ueli Wiget – Luiz Garcia</title>
-  
+
   <style>
   * {
     box-sizing: border-box;
@@ -146,18 +146,20 @@
 
   img.event-image {
     width: 100%;
+  }
+
+  figure.qr-code {
+    margin-bottom: 2mm;
+    padding: 1mm 0;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid rgba(0,0,0,0.1);
     -webkit-border-bottom-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
     border-bottom-right-radius: 10px;
   }
-
-  figure.qr-code {
-    padding-top: 3mm;
-    width: 100%;
-  }
   figure.qr-code > img {
     width: 32mm;
-    margin-bottom: 2mm;
   }
 
   .locator {
@@ -247,7 +249,9 @@
         <div class="row watermark">
           <div class="column pb-5 qr-code white-50">
             <img class="event-image" src="imgs/imagem_evento.png" alt="Imagem do evento">
-            <figure class="qr-code text-center"><img src="imgs/qr-code.png" alt="QR Code" /></figure>
+            <figure class="qr-code text-center" style="margin-top:-1mm">
+              <img src="imgs/qr-code.png" alt="QR Code" />
+            </figure>
             <div class="locator-label text-center">Localizador da venda</div>
             <div class="locator text-center">GRXMW9D | 000001</div>
             <p class="tax-cupom text-center">Ingresso válido como documento fiscal</p>
